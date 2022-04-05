@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fSmqg/0iAzEAsepiug4RS1/9gTZEcusNdy6SCyUIkHVbrP0G+Itun7P+E6sN+L9QvVYAAKcj0xtFs2kWIHvreQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\TOSHIBA\\Desktop\\File stream\\File stream\\File stream.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TOSHIBA\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
