@@ -25,17 +25,13 @@ namespace File_stream.Models
         }
         public Employee GetEmployeesById(int? id)
         {
-            if (id == null)
-                throw new NullReferenceException("id null ola bilmez");
-
             return Employees.Find(e=> e.Id == id);
         }
 
         public void RemoveEmployee(int? id)
         {
             Employee employee = GetEmployeesById(id);
-            if (id == null)
-                throw new NullReferenceException("id null ola bilmez");
+            
             
             Employees.Remove(employee);
         }

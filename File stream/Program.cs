@@ -1,6 +1,7 @@
 ﻿using File_stream.Models;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 
@@ -46,13 +47,18 @@ namespace File_stream
 
 
 
-            //string result = JsonConvert.SerializeObject(department);
+            string result = JsonConvert.SerializeObject(department);
             //Console.WriteLine(result);
             //using (StreamWriter sw = new StreamWriter(@"C:\Users\TOSHIBA\Desktop\File stream\File stream\Files\Database.json"))
             //{
             //    sw.Write(result);
 
             //}
+            Department department1 = JsonConvert.DeserializeObject<Department>(result);
+            using (StreamWriter sw = new StreamWriter(@"C:\Users\TOSHIBA\Desktop\File stream\File stream\Files\Database.json"))
+            {
+                Console.WriteLine(department1.Employees[0].ShowInfo());
+            }
 
            
 
@@ -73,48 +79,56 @@ namespace File_stream
                 Console.WriteLine("0. Quit");
 
                 string choice = Console.ReadLine();
-
+                
                 switch (choice)
                 {
                     case "1":
+                        Employee employee = new Employee();
+                      
+                        department.AddEmployee(employee);
+                        List<Department> departments = new List<Department>();
+                      
                         Console.WriteLine("Id:");
                         int id = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Name:");
                         string name = Console.ReadLine();
                         Console.WriteLine("Salary:");
                         double salary = Convert.ToDouble(Console.ReadLine());
-
-                        //Employee employee = new Employee();
-                        //department.AddEmployee(employee);
-
-                        string result = JsonConvert.SerializeObject(department);
-                        Console.WriteLine(result);
+                        
+                           
+                        string result1 = JsonConvert.SerializeObject(department);
+                        Console.WriteLine(result1);
                         using (StreamWriter sw = new StreamWriter(@"C:\Users\TOSHIBA\Desktop\File stream\File stream\Files\Database.json"))
                         {
-                            sw.Write(result);
+                            sw.Write(result1);
 
                         }
 
                         break;
-                    //case "2":
-                    //    foreach (var item in user.GetAllStatuses())
-                    //    {
-                    //        Console.WriteLine(item.GetStatusInfo());
-                    //    }
-                    //    break;
                     case "2":
-                        //Console.WriteLine("Id:");
-                        //int id = Convert.ToInt32(Console.ReadLine());
-                        //string json = File.ReadAllText(@"C:\Users\tu7knjupn\Desktop\File stream\File stream\Files\Database.json");
-                        
-                        //using (StreamReader sw = new StreamReader(@"C:\Users\tu7knjupn\Desktop\File stream\File stream\Files\Database.json"))
-                        //{
-                        //    json = sw.ReadToEnd();
- 
-                        //}
-                        //Console.WriteLine(user.GetStatusById(id).GetStatusInfo());
-                        break;
+                        Console.WriteLine("Id:");
+                        int id1 = Convert.ToInt32(Console.ReadLine());
+                        string json = File.ReadAllText(@"C:\Users\tu7knjupn\Desktop\File stream\File stream\Files\Database.json");
 
+                        using (StreamReader sw = new StreamReader(@"C:\Users\tu7knjupn\Desktop\File stream\File stream\Files\Database.json"))
+                        {
+                            json = sw.ReadToEnd();
+
+                        }
+                        Console.WriteLine(department.GetEmployeesById(id1));
+                        break;
+                    case "3":
+                   
+                        Console.WriteLine($"Please enter your :");
+                        string input = Console.ReadLine().Trim();
+                        if (string.IsNullOrEmpty(input))
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Input cannot be empty");
+
+                        }
+                     
+                        break;
                     case "0":
                         check = false;
                         break;
