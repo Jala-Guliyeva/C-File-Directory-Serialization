@@ -106,6 +106,7 @@ namespace File_stream
 
                         break;
                     case "2":
+
                         Console.WriteLine("Id:");
                         int id1 = Convert.ToInt32(Console.ReadLine());
                         string json = File.ReadAllText(@"C:\Users\tu7knjupn\Desktop\File stream\File stream\Files\Database.json");
@@ -115,7 +116,7 @@ namespace File_stream
                             json = sw.ReadToEnd();
 
                         }
-                        Console.WriteLine(department.GetEmployeesById(id1));
+                        Console.WriteLine(department.GetEmployeesById(1));
                         break;
                     case "3":
                    
