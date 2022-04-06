@@ -30,3 +30,19 @@ C:\Users\TOSHIBA\Desktop\File stream\File stream\obj\Debug\netcoreapp3.1\File st
 C:\Users\TOSHIBA\Desktop\File stream\File stream\obj\Debug\netcoreapp3.1\File stream.dll
 C:\Users\TOSHIBA\Desktop\File stream\File stream\obj\Debug\netcoreapp3.1\File stream.pdb
 C:\Users\TOSHIBA\Desktop\File stream\File stream\obj\Debug\netcoreapp3.1\File stream.genruntimeconfig.cache
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\bin\Debug\netcoreapp3.1\File stream.exe
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\bin\Debug\netcoreapp3.1\File stream.deps.json
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\bin\Debug\netcoreapp3.1\File stream.runtimeconfig.json
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\bin\Debug\netcoreapp3.1\File stream.runtimeconfig.dev.json
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\bin\Debug\netcoreapp3.1\File stream.dll
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\bin\Debug\netcoreapp3.1\File stream.pdb
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\obj\Debug\netcoreapp3.1\File stream.csproj.AssemblyReference.cache
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\obj\Debug\netcoreapp3.1\File stream.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\obj\Debug\netcoreapp3.1\File stream.AssemblyInfoInputs.cache
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\obj\Debug\netcoreapp3.1\File stream.AssemblyInfo.cs
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\obj\Debug\netcoreapp3.1\File stream.csproj.CoreCompileInputs.cache
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\obj\Debug\netcoreapp3.1\File stream.csproj.CopyComplete
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\obj\Debug\netcoreapp3.1\File stream.dll
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\obj\Debug\netcoreapp3.1\File stream.pdb
+C:\Users\tu7knjupn\Desktop\C-File-Directory-Serialization\File stream\obj\Debug\netcoreapp3.1\File stream.genruntimeconfig.cache

@@ -11,54 +11,36 @@ namespace File_stream
     {
         static void Main(string[] args)
         {
-            //Directory.CreateDirectory(@"C:\Users\tu7knjupn\Desktop\File stream\File stream\Files"); //files yazrig sonuna
+            Directory.CreateDirectory(@"C:\Users\tu7knjupn\Desktop\File stream\File stream\Files"); 
 
-            //if (!File.Exists(@"C:\Users\tu7knjupn\Desktop\File stream\File stream\Files\Database.json")) /bele bir fayl yoxdusa! yaratsin
-            //{
-            //    File.Create(@"C:\Users\tu7knjupn\Desktop\File stream\File stream\Files\Database.json");
-            //}
-
-            Employee employee1 = new Employee()
+            if (!File.Exists(@"C:\Users\tu7knjupn\Desktop\File stream\File stream\Files\Database.json")) 
             {
-                Id = 1,
-                Name ="Jale",
-                Salary=300
+                File.Create(@"C:\Users\tu7knjupn\Desktop\File stream\File stream\Files\Database.json");
+            }
 
-            };
-
-            Employee employee2 = new Employee()
-            {
-                Id = 2,
-                Name = "Konul",
-                Salary = 200
-
-            };
-
-
+          
             Department department = new Department()
             {
                 Id=1,
                 Name="Ilknur"
                 
+                
             };
            
-            department.Employees.Add(employee1);
-            department.Employees.Add(employee2);
+           
 
-
-
-            string result = JsonConvert.SerializeObject(department);
+            //string result = JsonConvert.SerializeObject(department);
             //Console.WriteLine(result);
             //using (StreamWriter sw = new StreamWriter(@"C:\Users\TOSHIBA\Desktop\File stream\File stream\Files\Database.json"))
             //{
             //    sw.Write(result);
 
             //}
-            Department department1 = JsonConvert.DeserializeObject<Department>(result);
-            using (StreamWriter sw = new StreamWriter(@"C:\Users\TOSHIBA\Desktop\File stream\File stream\Files\Database.json"))
-            {
-                Console.WriteLine(department1.Employees[0].ShowInfo());
-            }
+            //Department department1 = JsonConvert.DeserializeObject<Department>(result);
+            //using (StreamWriter sw = new StreamWriter(@"C:\Users\TOSHIBA\Desktop\File stream\File stream\Files\Database.json"))
+            //{
+            //    Console.WriteLine(department1.Employees[0].ShowInfo());
+            //}
 
            
 
@@ -83,10 +65,7 @@ namespace File_stream
                 switch (choice)
                 {
                     case "1":
-                        Employee employee = new Employee();
-                      
-                        department.AddEmployee(employee);
-                        List<Department> departments = new List<Department>();
+                        
                       
                         Console.WriteLine("Id:");
                         int id = Convert.ToInt32(Console.ReadLine());
@@ -95,7 +74,13 @@ namespace File_stream
                         Console.WriteLine("Salary:");
                         double salary = Convert.ToDouble(Console.ReadLine());
                         
-                           
+                           Employee employee = new Employee()
+                           {
+                               Id = id,
+                               Name = name,
+                               Salary = salary
+                           };
+                        department.Employees.Add(employee);
                         string result1 = JsonConvert.SerializeObject(department);
                         Console.WriteLine(result1);
                         using (StreamWriter sw = new StreamWriter(@"C:\Users\TOSHIBA\Desktop\File stream\File stream\Files\Database.json"))

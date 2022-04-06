@@ -23,16 +23,15 @@ namespace File_stream.Models
             Employees.Add(employee);
 
         }
-        public Employee GetEmployeesById(int? id)
+        public Employee GetEmployeesById(int id)
         {
             return Employees.Find(e=> e.Id == id);
         }
 
-        public void RemoveEmployee(int? id)
+        public void RemoveEmployee(int id)
         {
-            Employee employee = GetEmployeesById(id);
-            
-            
+            Employee employee = Employees.Find(e=>e.Id == id);
+
             Employees.Remove(employee);
         }
 

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TOSHIBA\\Desktop\\File stream\\File stream\\File stream.csproj": {}
+    "C:\\Users\\tu7knjupn\\Desktop\\C-File-Directory-Serialization\\File stream\\File stream.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TOSHIBA\\Desktop\\File stream\\File stream\\File stream.csproj": {
+    "C:\\Users\\tu7knjupn\\Desktop\\C-File-Directory-Serialization\\File stream\\File stream.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TOSHIBA\\Desktop\\File stream\\File stream\\File stream.csproj",
+        "projectUniqueName": "C:\\Users\\tu7knjupn\\Desktop\\C-File-Directory-Serialization\\File stream\\File stream.csproj",
         "projectName": "File stream",
-        "projectPath": "C:\\Users\\TOSHIBA\\Desktop\\File stream\\File stream\\File stream.csproj",
-        "packagesPath": "C:\\Users\\TOSHIBA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TOSHIBA\\Desktop\\File stream\\File stream\\obj\\",
+        "projectPath": "C:\\Users\\tu7knjupn\\Desktop\\C-File-Directory-Serialization\\File stream\\File stream.csproj",
+        "packagesPath": "C:\\Users\\tu7knjupn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tu7knjupn\\Desktop\\C-File-Directory-Serialization\\File stream\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TOSHIBA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tu7knjupn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
